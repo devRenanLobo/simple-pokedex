@@ -6,9 +6,9 @@ import './PokemonCard.css'
 const PokemonCard = () => {
 
     const [inputName, setInputName] = useState('')
-    const [name, setName] = useState('');
+    const [name, setName] = useState('pikachu');
     const [type, setType] = useState('');
-    const [image, setImage] = useState('pikachu');
+    const [image, setImage] = useState('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg');
 
     const connectApi = async (pokemonName) => {
 
