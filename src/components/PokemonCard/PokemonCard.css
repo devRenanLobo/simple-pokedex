@@ -1,0 +1,45 @@
+.pokeData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+    position: inherit;
+    flex-direction: column;
+}
+
+h1, h2, img {
+    padding-bottom: 5px;
+}
+
+.pokeData img {
+    width: 200px;
+    height: 400px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(165, 255, 255);
+    width: 60px;
+    height: 80px;
+    border-width: 2px;
+    border-style: solid; 
+    margin-top: 10px;  
+}
+
+button:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+input {
+    height: 60px;
+    width: 200px;
+    border: 30px;
+    background-color: rgb(165, 255, 255);
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    padding-left: 10px;
+}

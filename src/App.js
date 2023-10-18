@@ -1,39 +1,19 @@
-import axios from 'axios';
+/* eslint-disable jsx-a11y/alt-text */
 import './App.css';
-import SearchBar from './components/SearchBar/SearchBar';
-import { useState, useEffect } from 'react';
 import PokemonCard from './components/PokemonCard/PokemonCard';
 
+import logo from "./assets/pokebola.jpg";
+
+
+
 function App() {
-
-  const [pokemons, setPokemons] = useState([]);
-
-  const getPokemons = async() => {
-
-    try {
-      
-      const response = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=10&offset=0")
-      .then((response) => setPokemons(response.data.results));
-    
-    } catch (error) {
-     
-      console.log(error);
-
-    }
-  };
-
-  useEffect(() => {
-    
-    getPokemons();
-
-  }, []);
 
   return (
     <div className="App">
       <div className='container'>
+        <img className='logo' src={logo}/>
+        <h1> Buscador de Pokemons</h1>
         <PokemonCard />
-        <SearchBar />
-        {pokemons.map((pokemon) => console.log(pokemon))}
       </div>
     </div>
   );

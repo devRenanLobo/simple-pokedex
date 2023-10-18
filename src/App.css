@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Mohave', sans-serif;
 }
 
 .App{
@@ -8,17 +11,29 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url(./assets/poke-field.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+img.logo {
+    height: 100px;
+    width: 100px;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    margin: 0;
+}    
+
 .container {
-    background-color: rgb(255, 208, 208);
+    background-color: rgb(255, 132, 132);
     width: 500px;
-    height: 500px;
+    height: 700px;
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 20px;
     border-width: 2px;
     border-style: solid;
     box-shadow: 10px 10px 15px black;
+    flex-direction: column;
 }
