@@ -5,7 +5,7 @@ import './PokemonCard.css'
 
 const PokemonCard = () => {
 
-    const [inputName, setInputName] = useState('')
+    const [inputName, setInputName] = useState('');
     const [name, setName] = useState('pikachu');
     const [type, setType] = useState('');
     const [image, setImage] = useState('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg');
@@ -16,7 +16,7 @@ const PokemonCard = () => {
             const URL = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
             const response = await axios.get(URL);
             setName(response.data.name);
-            setType(response.data.types[0].type.name)
+            setType(response.data.types[0].type.name);
             setImage(response.data.sprites.other.dream_world.front_default);
 
         } catch (error) {
